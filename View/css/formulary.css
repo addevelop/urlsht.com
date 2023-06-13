@@ -1,0 +1,146 @@
+.formulary_regist
+{
+    position: relative;
+    width: 100%;
+}
+.container_img > img
+{
+    position: absolute;
+    width: 100%;    
+
+}
+
+.input_text
+{
+    position: relative;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--blueColor);
+    border-image: linear-gradient(to right, var(--greyColor), var(--greyColor)) 10;
+    color: white;
+    background-color: transparent;
+}
+.container_input
+{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    color: var(--greyColor);
+}
+.div_text
+{
+    position: relative;
+    padding: 6% 0;
+}
+
+.input_text:focus ~ .label_text
+{
+    color: var(--blueColor);
+    text-shadow: 0 0 10px var(--greyColor);
+}
+.input_text:focus
+{
+    outline: none;
+    border-image: linear-gradient(to right, var(--greyColor), var(--blueColor)) 10;
+
+    
+}
+
+.label_text_focus
+{
+    transform: translateY(-80%) scale(1);
+}
+
+.label_text
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    transition-duration: 0.2s;
+    cursor:text;
+}
+
+.container_radio
+{
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;  
+}
+
+.input_radio
+{
+  position: relative;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.input_radio::after
+{
+  position: absolute;
+  content: '';
+  transition-duration: 0.6s;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+.input_radio::before
+{
+  position: absolute;
+  content: '';
+  background-image: linear-gradient(var(--textColor), var(--blueColor));
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+.input_radio:checked::after
+{
+  transform: scale(0.3);
+  border: none;
+}
+
+.input_submit
+{
+    position: relative;
+    display: block;
+    box-shadow: 0 0 9px var(--textColor);
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 2% 0;
+    transition-duration: 0.3s;
+    
+}
+
+.check_password
+{
+    position: absolute;
+    width: auto;
+    cursor: pointer;
+    right: 0;
+    height: 100%;
+}
+
+.password_forgot
+{
+    position: relative;
+    color: black;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.input_submit:hover
+{
+    color: white;
+    background-color: var(--gradientGreen1);
+    box-shadow: 0 0 10px var(--textColor);
+}
+

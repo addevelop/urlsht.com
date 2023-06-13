@@ -1,0 +1,204 @@
+:root{
+    --blueColor: #067ACD;
+    --greyColor: #CDDCDC;
+    --textColor: #243845;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    padding: 2%;
+}
+
+
+.classFormulaire
+{
+    position: relative;
+    width: 100%;
+}
+
+.container_menu
+{
+    position: relative;
+    width: 100%;
+
+}
+
+.menu
+{
+    position: relative;
+    width: 100%;
+    display:flex;
+    padding: 0;
+
+}
+
+.menu > li
+{
+    position: relative;
+    list-style: none;
+    flex: 1 1 auto;
+    width: 100%;
+    text-align: center;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.link
+{
+    display: block;
+    transition-duration: 0.2s;
+    
+}
+
+.sub_menu
+{
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    transition-duration: 0.7s;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+}
+.menu > li:hover > .sub_menu
+{
+    max-height: 100vh;
+    overflow:visible;
+}
+
+
+.link_sub:hover
+{
+    transform: translateX(7px);
+    background-color: var(--textColor);
+    text-decoration: none;
+    color: var(--greyColor) !important;
+}
+
+.link_sub
+{
+    position: relative;
+    display: block;
+    background-color: white;
+    padding: 2%;
+    color: var(--textColor) !important;
+    transition-duration: 0.2s;
+    
+}
+.subsub_menu > ul
+{
+    position: absolute;
+    top: 0;
+    margin-left: 100%;
+    width: 100%;
+    height: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+        transition-duration: 0.7s;
+
+}
+.subsub_menu
+{
+    position: relative;
+}
+
+
+.link:hover
+{
+    color: var(--blueColor) !important;
+    transform: translateY(-7px);
+}
+.subsub_menu > ul > li
+{
+    background-color: white;
+    list-style: none;
+    color: var(--textColor);
+    padding: 0;
+    transition-duration: 0.2s;
+    padding: 2%;
+}
+.subsub_menu:hover > ul
+{
+    max-height: 100vh;
+}
+.subsub_menu > ul > li:hover
+{
+    background-color: var(--textColor);
+    color: white;
+    transform: translateX(1%);
+}
+
+
+.classFormulaire > input
+{
+    width: 100%;
+    background-color: var(--greyColor);
+    color: var(--greenColor);
+    font-weight: bold;
+    border: none;
+
+}
+.block
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.recup
+{
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 10px var(--greyColor);
+}
+.changeb1
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    transition-duration: 0.7s;
+    border: 1px solid #333;
+    background-color: white;
+    box-shadow: 0 0 10px #333;
+    
+}
+.changeb
+{
+    position: absolute;
+    max-width: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 30px;
+    transition-duration: 0.7s;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: inset 0 0 10px #333;
+}
+
+
+.item
+{
+    position: relative;
+    width: 100%;
+    color: var(--textColor);
+}
+.colorD
+{
+    color: red !important;
+}
+
+.item:hover
+{
+    background-color: var(--greyColor);
+}
+

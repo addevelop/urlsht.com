@@ -1,0 +1,19 @@
+.container_log
+{
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: auto !important;
+    background-color: rgba(79, 81, 81, 0.568);
+    padding: 2% !important;
+    box-shadow: 0 0 10px var(--textColor);
+}
+
+
+@media (max-width: 500px)
+{
+    .container_log
+    {
+        width: 99%;
+    }
+}
